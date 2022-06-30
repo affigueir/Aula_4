@@ -4,6 +4,7 @@ namespace MyFirstMethod
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             //CountTo10();
@@ -16,6 +17,7 @@ namespace MyFirstMethod
 
             CountToN(i);
             CountToN(j);
+            CountToN(i, j);
             
         }
 
@@ -30,6 +32,15 @@ namespace MyFirstMethod
         private static void CountToN(int n)
         {
             for(int i = 1; i <= n; i++)
+            {
+                System.Console.WriteLine(i);
+            }
+        }
+
+        private static void CountToN(int n1, int n2)
+        {
+            
+            for(int i = n1 +1 ; i < n2; i++)
             {
                 System.Console.WriteLine(i);
             }
